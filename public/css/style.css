@@ -43,7 +43,7 @@ button:after {
 }
 
 button:hover {
-  color: #900;
+  color: darkred;
   background: white;
 }
 
@@ -61,20 +61,20 @@ button:active {
 
 @-webkit-keyframes flash {
   0% {
-    color: #FFF;
-    background: #900;
+    color: white;
+    background: darkred;
   }
   49% {
-    color: #FFF;
-    background: #900;
+    color: white;
+    background: darkred;
   }
   50% {
-    color: #900;
-    background: #FFF;
+    color: darkred;
+    background: white;
   }
   99% {
-    color: #900;
-    background: #FFF;
+    color: darkred;
+    background: white;
   }
 }
 
@@ -85,9 +85,9 @@ button:active {
   top: 25%;
   margin-left: -320px;
   padding-bottom: 25px;
-  background: #900;
+  background: darkred;
   color: white;
-  box-shadow: .5em 25px 0px #555;
+  box-shadow: .5em 25px 0px dimgrey;
 }
 
 .alert > header {
@@ -100,7 +100,7 @@ button:active {
   font-weight: normal;
   margin: 0;
   padding: 0 1em;
-  background: #900;
+  background: darkred;
 }
 
 .alert > section {
@@ -128,7 +128,7 @@ button:active {
   font-size: 100%;
   font-weight: normal;
   margin: 0;
-  color: #999
+  color: grey;
 }
 
 .commits > section > header > h2 > .user {
@@ -140,7 +140,7 @@ button:active {
 }
 
 .commits > section > header > h2 > time {
-  color: white;
+  color: lightgrey;
 }
 
 .commits > section > ul {
@@ -150,7 +150,7 @@ button:active {
 }
 
 .commits > section > ul > li:before {
-  content: '*'
+  content: '>'
 }
 
 .commits > section > ul > li {
