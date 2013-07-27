@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-size: 24px;
+  line-height: 25px;
+  background: black;
+  color: lime;
+}
+
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 25px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  display: inline-block;
+  background: none;
+  border: none;
+  color: yellow;
+  padding: 0;
+  margin: 0;
+}
+
+button:before {
+  content: '[';
+  padding-right: .5em;
+}
+
+button:after {
+  content: ']';
+  padding-left: .5em;
+}
+
+button:hover {
+  color: #900;
+  background: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background: yellow;
+}
+
+.flash {
+  -webkit-animation: flash 1s infinite;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    color: #FFF;
+    background: #900;
+  }
+  49% {
+    color: #FFF;
+    background: #900;
+  }
+  50% {
+    color: #900;
+    background: #FFF;
+  }
+  99% {
+    color: #900;
+    background: #FFF;
+  }
+}
+
+.alert {
+  width: 640px;
+  position: fixed;
+  left: 50%;
+  top: 25%;
+  margin-left: -320px;
+  padding-bottom: 25px;
+  background: #900;
+  color: white;
+  box-shadow: .5em 25px 0px #555;
+}
+
+.alert > header {
+  text-align: center;
+}
+
+.alert > header > h1 {
+  display: inline-block;
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0 1em;
+  background: #900;
+}
+
+.alert > section {
+  padding: 37px .7em 37px;
+  margin: -13px .2em 13px;
+  text-align: center;
+  border: .1em solid white;
+}
+
+.alert > footer {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.commits {
+  width: 800px;
+  margin: 200px auto;
+}
+
+.commits > section {
+  margin-bottom: 25px;
+}
+
+.commits > section > header > h2 {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+  color: #999
+}
+
+.commits > section > header > h2 > .user {
+  color: orange;
+}
+
+.commits > section > header > h2 > .branch {
+  color: red;
+}
+
+.commits > section > header > h2 > time {
+  color: white;
+}
+
+.commits > section > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.commits > section > ul > li:before {
+  content: '*'
+}
+
+.commits > section > ul > li {
+
+}
+
+.commits > section > ul > li > a.commit {
+  display: inline-block;
+  overflow: hidden;
+  width: 5em;
+}
