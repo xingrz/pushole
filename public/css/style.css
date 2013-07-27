@@ -34,12 +34,16 @@ button {
 
 button:before {
   content: '[';
-  padding-right: .5em;
+  color: yellow;
+  background: darkred;
+  margin-right: .5em;
 }
 
 button:after {
   content: ']';
-  padding-left: .5em;
+  color: yellow;
+  background: darkred;
+  margin-left: .5em;
 }
 
 button:hover {
@@ -131,7 +135,7 @@ button:active {
   color: grey;
 }
 
-.commits > section > header > h2 > .user {
+.commits > section > header > h2 > .author {
   color: orange;
 }
 
@@ -139,7 +143,7 @@ button:active {
   color: red;
 }
 
-.commits > section > header > h2 > time {
+.commits > section > header > h2 > .date {
   color: lightgrey;
 }
 
@@ -157,7 +161,7 @@ button:active {
 
 }
 
-.commits > section > ul > li > a.commit {
+.commits > section > ul > li > a.hash {
   display: inline-block;
   overflow: hidden;
   width: 5em;
